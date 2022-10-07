@@ -1,0 +1,110 @@
+@font-face {
+    font-family:'Inter';
+    src:url('/fonts/Inter-Regular.otf');
+}
+
+@font-face {
+    font-family:'Inter Medium';
+    src:url('/fonts/Inter-Medium.otf');
+}
+
+@font-face {
+    font-family:'Inter Light';
+    src:url('/fonts/Inter-Light.otf');
+}
+
+@font-face {
+    font-family:'Inter Italic';
+    src:url('/fonts/Inter-Italic.otf');
+}
+
+@font-face {
+    font-family:'Inter Bold';
+    src:url('/fonts/Inter-Bold.otf');
+}
+
+body {
+    background:#F5F5F5;
+    text-align: center;
+    padding:10vh 0;
+}
+
+.err-image {
+    width:70vh;
+    height:auto;
+}
+
+.err-header {
+    font-family:'Inter', Helvetica, Arial, sans-serif;
+}
+
+.err-navigation {
+    display:flex;
+    flex-direction: row;
+    font-family: 'Inter Medium', Helvetica, Arial, sans-serif;
+    list-style-type: none;
+    justify-content: center;
+    max-width:600px;
+    padding:20px;
+    border-radius:14px;
+    margin:5vh auto;
+    background:#f1f1f1;
+}
+
+.err-navigation li:before {
+    content: "|";
+    color:rgba(0,0,0,0.2);
+}
+
+.err-navigation li:first-child:before {
+    content: "";
+}
+
+.err-link {
+    color:rgba(0,0,0,0.8);
+    margin:0 5px;
+    text-decoration:none;
+    transition: 0.1s;
+    font-family:'Inter Medium', Helvetica, Arial, sans-serif;
+}
+
+.err-link:hover {
+    color:rgba(0,0,0,1);
+    text-decoration: underline;
+}
+
+.err-link-active {
+    color:#4149F2;
+}
+
+@media screen and (max-width:800px) {
+    * {
+        font-size:0.95em;
+    }
+
+    .err-image {
+        width:70%;
+        height:auto;
+    }
+
+    .err-navigation {
+        flex-direction: column;
+        position:fixed;
+        width:100%;
+        bottom:0;
+        overflow:hidden;
+        padding:1.7em 0;
+        font-size:1.2rem;
+        font-family:'Inter';
+        line-height:1.4em;
+        margin-bottom:0;
+    }
+
+    .err-header {
+        font-size:1.2em;
+    }
+
+    .err-navigation li:before {
+        content: "";
+    }
+}
